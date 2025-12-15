@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Juan Miguel | Resume</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Here I connect my JavaScript file -->
+    <script src="JavaScript.js" defer></script>
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <!-- Navagation bar -->
+        <!-- This is the top menu that appears on every page -->
+        <header>
+            <nav class="main-nav">
+                <!-- It's kind of just my name for the logo  -->
+                <div class="logo">
+                    <span>JuanMiguel.dev</span>
+                </div>
+
+                <!-- This is the list of links to my pages -->
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home / Resume</a></li>
+                    <li><a href="HTMLCheatsheet.html">HTML Cheat Sheet</a></li>
+                    <li><a href="CSScheatsheet.html">CSS Cheat Sheet</a></li>
+                </ul>
+
+                <!-- This button will change the page to dark mode using JavaScript -->
+                <button id="darkModeBtn" class="nav-button">
+                    Dark Mode
+                </button>
+            </nav>
+        </header>
+
+        <!-- main content -->
+        <main>
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>Hello, I'm Juan Miguel</h1>
+                    <p>
+                        I am a web development student. This website is my final project
+                        using HTML, CSS, and JavaScript. I am still learning step by step.
+                    </p>
+
+                    <!-- this button will show/hide extra information using JavaScript -->
+                    <button id="moreAboutMeBtn" class="primary-btn">
+                        Show more about me
+                    </button>
+                </div>
+
+
+                <div class="hero-image">
+                    
+                    <img id=Juanmi src="images/Juanmi.jpeg" alt="Juan Miguel profile picture">
+                    
+
+                </div>
+            </section>
+
+            <!-- section more about me-->
+            <section id="moreAboutMe" class="hidden-section">
+                <h2>More About Me</h2>
+                <p>
+                    I enjoy learning new technologies, working on school projects,
+                    and improving my skills little by little. I also like cooking,
+                    travelling and creating things with my hands.
+                </p>
+            </section>
+
+            <!-- RESUME  -->
+           <section class="resume-section">
+    <h2>Resume</h2>
+
+    <div class="resume-grid">
+        <!-- Left -->
+        <div>
+            <h3>Contact</h3>
+            <ul>
+                <li><strong>Name:</strong> Juan Miguel Duque</li>
+                <li><strong>Location:</strong> Calgary, Alberta, Canada</li>
+                <li><strong>Email:</strong> xjuanmix2005@gmail.com</li>
+                <li><strong>Phone:</strong> (403) 479-3219</li>
+            </ul>
+
+            <h3>Profile Summary</h3>
+            <p>
+                Software Development student with experience in customer service,
+                warehouse operations, and hands-on team environments.
+                Known for strong attention to detail, adaptability, and the ability
+                to work efficiently under pressure.
+                Currently expanding technical skills in web development and motivated
+                to apply them in practical, real-world projects.
+            </p>
+
+            <h3>Qualifications</h3>
+            <ul>
+                <li>Strong attention to detail and ability to meet demanding deadlines.</li>
+                <li>Excellent teamwork and communication skills in fast-paced environments.</li>
+                <li>Customer-focused mindset built on active listening, trust, and empathy.</li>
+                <li>Effective time management with the ability to multitask and adapt to priorities.</li>
+                <li>Motivated Software Development student eager to continue learning and improving.</li>
+            </ul>
+        </div>
+
+        <!-- Right -->
+        <div>
+            <h3>Technical Skills</h3>
+
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Beginner</td>
+                        <td>Semantic tags, page structure, tables, forms.</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Beginner</td>
+                        <td>Layout, colors, spacing, responsive design.</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner</td>
+                        <td>DOM manipulation, events, basic interactivity.</td>
+                    </tr>
+                    <tr>
+                        <td>Git / GitHub</td>
+                        <td>Beginner</td>
+                        <td>Basic version control and project uploads.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="resume-section">
+    <h2>Education</h2>
+
+    <ul>
+        <li>
+            <strong>Software Development Diploma</strong><br>
+            Bow Valley College – Calgary, Alberta<br>
+            <span class="small-text">September 2025 – Present</span>
+        </li>
+        <br>
+        <li>
+            <strong>High School Diploma</strong><br>
+            La Sagrada Familia – Armenia, Colombia<br>
+            <span class="small-text">February 2017 – November 2021</span>
+        </li>
+    </ul>
+</section>
+
+<section class="resume-section">
+    <h2>Work Experience</h2>
+
+    <h3>Landscaper</h3>
+    <p class="small-text">
+        Verde Landscaping – Calgary, Alberta (Sep 2025 – Present)
+    </p>
+    <ul>
+        <li>Performed lawn care, tree pruning, and garden maintenance for residential and commercial properties.</li>
+        <li>Operated gardening tools and machinery safely and efficiently.</li>
+        <li>Worked with a team of 3–4 people to complete projects on time with high customer satisfaction.</li>
+    </ul>
+
+    <h3>Warehouse Associate</h3>
+    <p class="small-text">
+        Tennis – Armenia, Colombia (Jan 2022 – Dec 2023)
+    </p>
+    <ul>
+        <li>Picked, packed, and shipped online clothing orders accurately.</li>
+        <li>Verified SKUs, sizes, and styles to reduce fulfillment errors.</li>
+        <li>Conducted quality checks and assisted with inventory organization.</li>
+    </ul>
+</section>
+<section class="resume-section">
+    <h2>Resume</h2>
+
+    <div class="resume-grid">
+        
+        <div>
+            <h3>Contact</h3>
+            <ul>
+                <li><strong>Name:</strong> Juan Miguel Duque</li>
+                <li><strong>Location:</strong> Calgary, Alberta, Canada</li>
+                <li><strong>Email:</strong> xjuanmix2005@gmail.com</li>
+                <li><strong>Phone:</strong> (403) 479-3219</li>
+            </ul>
+
+            <h3>Profile Summary</h3>
+            <p>
+                Software Development student with experience in customer service,
+                warehouse operations, and hands-on team environments.
+                Known for strong attention to detail, adaptability, and the ability
+                to work efficiently under pressure.
+                Currently expanding technical skills in web development and motivated
+                to apply them in practical, real-world projects.
+            </p>
+
+            <h3>Qualifications</h3>
+            <ul>
+                <li>Strong attention to detail and ability to meet demanding deadlines.</li>
+                <li>Excellent teamwork and communication skills in fast-paced environments.</li>
+                <li>Customer-focused mindset built on active listening, trust, and empathy.</li>
+                <li>Effective time management with the ability to multitask and adapt to priorities.</li>
+                <li>Motivated Software Development student eager to continue learning and improving.</li>
+            </ul>
+        </div>
+
+       
+        <div>
+            <h3>Technical Skills</h3>
+
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Beginner</td>
+                        <td>Semantic tags, page structure, tables, forms.</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Beginner</td>
+                        <td>Layout, colors, spacing, responsive design.</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner</td>
+                        <td>DOM manipulation, events, basic interactivity.</td>
+                    </tr>
+                    <tr>
+                        <td>Git / GitHub</td>
+                        <td>Beginner</td>
+                        <td>Basic version control and project uploads.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="resume-section">
+    <h2>Education</h2>
+
+    <ul>
+        <li>
+        <strong>Software Development Diploma</strong><br>
+        Bow Valley College – Calgary, Alberta<br>
+        <span class="small-text">September 2025 – Present</span>
+        </li>
+        <br>
+        <li>
+        <strong>High School Diploma</strong><br>
+        La Sagrada Familia – Armenia, Colombia<br>
+        <span class="small-text">February 2017 – November 2021</span>
+        </li>
+    </ul>
+</section>
+
+<section class="resume-section">
+    <h2>Work Experience</h2>
+
+    <h3>Landscaper</h3>
+    <p class="small-text">
+        Verde Landscaping – Calgary, Alberta (Jan 2025 – Present)
+    </p>
+    <ul>
+    <li>Performed lawn care, tree pruning, and garden maintenance for residential and commercial properties.</li>
+    <li>Operated gardening tools and machinery safely and efficiently.</li>
+    <li>Worked with a team of 3–4 people to complete projects on time with high customer satisfaction.</li>
+    </ul>
+
+    <h3>Janitor</h3>
+    <p class="small-text">
+        Alphine – Calgary, Alberta (Jan 2024 – Dec 2024)
+    </p>
+    <ul>
+    <li>Maintained cleanliness in offices and shared spaces to ensure a safe and welcoming environment.</li>
+    <li>Followed structured cleaning routines to improve efficiency.</li>
+    <li>Collaborated with team members to complete daily tasks on schedule.</li>
+    </ul>
+
+    <h3>Warehouse Associate</h3>
+    <p class="small-text">
+        Tennis – Armenia, Colombia (Jan 2022 – Dec 2023)
+    </p>
+    <ul>
+    <li>Picked, packed, and shipped online clothing orders accurately.</li>
+    <li>Verified SKUs, sizes, and styles to reduce fulfillment errors.</li>
+    <li>Conducted quality checks and assisted with inventory organization.</li>
+    </ul>
+</section>
+
+
+            <!-- Experience and education -->
+            <section class="resume-section">
+                <h2>Experience &amp; Education</h2>
+
+                <h3>Education</h3>
+                <ul>
+                    <li>
+                    <strong>Bow Valley College</strong> – Web Development Courses
+                    <br>
+                    <span class="small-text">2025 – Present</span>
+                    </li>
+                </ul>
+
+                <h3>Experience</h3>
+                <ul>
+                    <li>
+                    <strong>Customer Service / Hospitality</strong>
+                    <br>
+                    <span class="small-text">
+                        Experience working with customers, communication, teamwork,
+                        and problem solving in real-life situations.
+                    </span>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer>
+        <p>&copy; 2025 Juan Miguel - Final Project for Web Development Course</p>
+        </footer>
+    </div>
+</body>
+</html>

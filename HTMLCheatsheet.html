@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="JavaScript.js" defer></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <nav class="main-nav">
+                <div class="logo">
+                    <span>JuanMiguel.dev</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home / Resume</a></li>
+                    <li><a href="HTMLCheatsheet.html" class="active">HTML Cheat Sheet</a></li>
+                    <li><a href="CSScheatsheet.html">CSS Cheat Sheet</a></li>
+                </ul>
+                <button id="darkModeBtn" class="nav-button">
+                    Dark Mode
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="cheatsheet-header">
+                <h1>HTML Cheat Sheet</h1>
+                <p>
+                    This page is my personal reference for common HTML elements.
+                    I can check it quickly while I am coding my projects.
+                </p>
+            </section>
+
+            <section class="cheatsheet-section">
+                <h2>Common HTML Elements</h2>
+
+                <table class="cheatsheet-table">
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Example</th>
+                            <th>What it does</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;h1&gt; ... &lt;/h1&gt;</td>
+                            <td><code>&lt;h1&gt;Main Title&lt;/h1&gt;</code></td>
+                            <td>Main heading of the page. There should be only one main h1.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;p&gt; ... &lt;/p&gt;</td>
+                            <td><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></td>
+                            <td>Used for normal blocks of text.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;a&gt; ... &lt;/a&gt;</td>
+                            <td><code>&lt;a href="page.html"&gt;Go to page&lt;/a&gt;</code></td>
+                            <td>Creates a hyperlink to another page or website.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;img&gt;</td>
+                            <td><code>&lt;img src="cat.jpg" alt="Cute cat"&gt;</code></td>
+                            <td>Displays an image. <code>alt</code> text is important for accessibility.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;ul&gt; &amp; &lt;li&gt;</td>
+                            <td>
+                                <code>
+                                    &lt;ul&gt;<br>
+                                    &nbsp;&nbsp;&lt;li&gt;Milk&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&lt;li&gt;Bread&lt;/li&gt;<br>
+                                    &lt;/ul&gt;
+                                </code>
+                            </td>
+                            <td>Creates an unordered list with bullet points.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;ol&gt; &amp; &lt;li&gt;</td>
+                            <td>
+                                <code>
+                                    &lt;ol&gt;<br>
+                                    &nbsp;&nbsp;&lt;li&gt;First&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&lt;li&gt;Second&lt;/li&gt;<br>
+                                    &lt;/ol&gt;
+                                </code>
+                            </td>
+                            <td>Creates an ordered list with numbers.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;div&gt; ... &lt;/div&gt;</td>
+                            <td><code>&lt;div class="box"&gt;Content&lt;/div&gt;</code></td>
+                            <td>Generic container used to group other elements (block level).</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;span&gt; ... &lt;/span&gt;</td>
+                            <td><code>&lt;span class="highlight"&gt;word&lt;/span&gt;</code></td>
+                            <td>Inline container used to style part of a text.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;header&gt;</td>
+                            <td><code>&lt;header&gt;Top area&lt;/header&gt;</code></td>
+                            <td>Semantic tag for the top of a page (logo, navigation, etc.).</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;main&gt;</td>
+                            <td><code>&lt;main&gt;Main content here&lt;/main&gt;</code></td>
+                            <td>Semantic tag for the main content of the page.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;footer&gt;</td>
+                            <td><code>&lt;footer&gt;Copyright text&lt;/footer&gt;</code></td>
+                            <td>Semantic tag for the bottom section of the page.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;section&gt;</td>
+                            <td><code>&lt;section&gt;Group of content&lt;/section&gt;</code></td>
+                            <td>Used to group related content into sections.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;nav&gt;</td>
+                            <td><code>&lt;nav&gt;Navigation links&lt;/nav&gt;</code></td>
+                            <td>Used to wrap the main navigation links of the site.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;table&gt;</td>
+                            <td><code>&lt;table&gt;rows and columns&lt;/table&gt;</code></td>
+                            <td>Container for tabular data (rows and columns).</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;form&gt;</td>
+                            <td><code>&lt;form action="send.php" method="post"&gt;...&lt;/form&gt;</code></td>
+                            <td>Used to send user input data to a server.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="notes-section">
+                <h2>Notes</h2>
+                <p>
+                    Remember: Every HTML document should start with
+                    <code>&lt;!DOCTYPE html&gt;</code> and have the structure
+                    <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and
+                    <code>&lt;body&gt;</code>.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Juan Miguel - HTML Cheat Sheet</p>
+        </footer>
+    </div>
+</body>
+</html>

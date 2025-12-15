@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="JavaScript.js" defer></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <nav class="main-nav">
+                <div class="logo">
+                    <span>JuanMiguel.dev</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home / Resume</a></li>
+                    <li><a href="HTMLCheatsheet.html">HTML Cheat Sheet</a></li>
+                    <li><a href="CSScheatsheet.html" class="active">CSS Cheat Sheet</a></li>
+                </ul>
+                <button id="darkModeBtn" class="nav-button">
+                    Dark Mode
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="cheatsheet-header">
+                <h1>CSS Cheat Sheet</h1>
+                <p>
+                    This page is my personal reference for common CSS properties.
+                    I use it to remember how to style my HTML elements.
+                </p>
+            </section>
+
+            <section class="cheatsheet-section">
+                <h2>Common CSS Properties</h2>
+
+                <table class="cheatsheet-table">
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Example</th>
+                            <th>What it does</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>color</td><td><code>color: red;</code></td><td>Changes the color of the text.</td></tr>
+                        <tr><td>background-color</td><td><code>background-color: #f0f0f0;</code></td><td>Sets the background color of an element.</td></tr>
+                        <tr><td>font-size</td><td><code>font-size: 18px;</code></td><td>Controls how big the text is.</td></tr>
+                        <tr><td>font-family</td><td><code>font-family: Arial, sans-serif;</code></td><td>Changes the style/type of the font.</td></tr>
+                        <tr><td>margin</td><td><code>margin: 20px;</code></td><td>Space outside the element (outside the border).</td></tr>
+                        <tr><td>padding</td><td><code>padding: 10px;</code></td><td>Space between the content and the border.</td></tr>
+                        <tr><td>border</td><td><code>border: 1px solid #000;</code></td><td>Draws a line around the element.</td></tr>
+                        <tr><td>width</td><td><code>width: 300px;</code></td><td>Defines how wide the element is.</td></tr>
+                        <tr><td>height</td><td><code>height: 200px;</code></td><td>Defines how tall the element is.</td></tr>
+                        <tr><td>display</td><td><code>display: flex;</code></td><td>Changes the display type. <code>flex</code> is useful for layouts.</td></tr>
+                        <tr><td>flex</td><td><code>flex: 1;</code></td><td>Used inside flexbox to let items grow/shrink.</td></tr>
+                        <tr><td>justify-content</td><td><code>justify-content: center;</code></td><td>Aligns items horizontally inside a flex container.</td></tr>
+                        <tr><td>align-items</td><td><code>align-items: center;</code></td><td>Aligns items vertically inside a flex container.</td></tr>
+                        <tr><td>border-radius</td><td><code>border-radius: 8px;</code></td><td>Makes the corners of the element rounded.</td></tr>
+                        <tr><td>box-shadow</td><td><code>box-shadow: 0 2px 4px rgba(0,0,0,0.2);</code></td><td>Adds a soft shadow around the element.</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="notes-section">
+                <h2>Responsive Design Note</h2>
+                <p>To make pages responsive, we can use a media query like this:</p>
+                <pre><code>@media (max-width: 768px) {
+  /* styles for small screens go here */
+}</code></pre>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Juan Miguel - CSS Cheat Sheet</p>
+        </footer>
+    </div>
+</body>
+</html>
