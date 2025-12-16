@@ -2,8 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    //Dark Mode
-
+    //DarkMode
     var darkModeBtn = document.getElementById("darkModeBtn");
 
     //load saved theme from localStorage 
@@ -36,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     //Show staff and hide about me 
-
     var moreBtn = document.getElementById("moreAboutMeBtn");
     var moreSection = document.getElementById("moreAboutMe");
 
@@ -67,8 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
     
     //this is a small extra feature to show more JavaScript.
     //if the user clicks the "Resume" heading, the section highlights.
-    
-
     var resumeHeading = document.querySelector(".resume-section h2");
     if (resumeHeading) {
         resumeHeading.style.cursor = "pointer";
@@ -94,4 +90,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
 
