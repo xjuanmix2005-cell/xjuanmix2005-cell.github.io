@@ -89,8 +89,9 @@ document.addEventListener("DOMContentLoaded", function () {
         element.classList.add("flash");
 
         setTimeout(function () {
-            element.classList.remove("flash");
+        element.classList.remove("flash");
         }, 600);
     }
 
 });
+
